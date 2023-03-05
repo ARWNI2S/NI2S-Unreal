@@ -1,10 +1,10 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Some copyright should be here...
 
 using UnrealBuildTool;
 
-public class NI2SEditor : ModuleRules
+public class NI2SSubsystem : ModuleRules
 {
-	public NI2SEditor(ReadOnlyTargetRules Target) : base(Target)
+	public NI2SSubsystem(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
@@ -25,29 +25,18 @@ public class NI2SEditor : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core",
+                "Core",
 				// ... add other public dependencies that you statically link with here ...
 			}
-			);
+            );
 			
 		
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-                "Projects",
-                "InputCore",
-                "EditorFramework",
-                "UnrealEd",
-				"ToolMenus",
-                "CoreUObject",
-                "Engine",
-                "Slate",
-                "SlateCore",
-
-                "EditorStyle",
-                "LevelEditor",
-                "InteractiveToolsFramework",
-                "EditorInteractiveToolsFramework",
+				"CoreUObject",
+				"Engine",
+                "NI2SFramework",
 				// ... add private dependencies that you statically link with here ...	
 			}
             );

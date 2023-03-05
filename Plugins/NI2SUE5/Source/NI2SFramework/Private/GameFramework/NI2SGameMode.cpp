@@ -13,7 +13,7 @@ ANI2S_GameMode::ANI2S_GameMode()
 	// use our custom PlayerController class
 	PlayerControllerClass = ANI2S_PlayerController::StaticClass();
 
-	GameStateClass = ANI2S_GameState::StaticClass();
+	//GameStateClass = ANI2S_GameState::StaticClass();
 	PlayerStateClass = ANI2S_PlayerState::StaticClass();
 
 	// set default pawn class to our Blueprinted character Blueprint'/NI2SUE5/GameFramework/BP_NI2SCharacter.BP_NI2SCharacter'

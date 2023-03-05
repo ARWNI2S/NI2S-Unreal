@@ -21,14 +21,14 @@
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "NI2SEditor",
-			"Type": "Editor",
-			"LoadingPhase": "Default"
-		},
-		{
 			"Name": "BlueprintTools",
 			"Type": "Runtime",
 			"LoadingPhase": "PreLoadingScreen"
+		},
+		{
+			"Name": "NI2SSubsystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
 		}
 	]
 }
