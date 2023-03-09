@@ -20,4 +20,5 @@ Unreal Engine plugin for NI2S.
 ![GitHub watchers](https://img.shields.io/github/watchers/arwni2s/ni2s-unreal?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/arwni2s/ni2s-unreal?style=social)
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/arwni2s?logo=github&style=social)
-
+[![Liberpay Donate](https://img.shields.io/liberapay/goal/ARWNI2S?label=Donate&logo=liberapay&style=flat)](https://liberapay.com/ARWNI2S/donate)
+![Liberapay patrons](https://img.shields.io/liberapay/patrons/arwni2s?logo=liberapay)
