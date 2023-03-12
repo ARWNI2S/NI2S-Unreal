@@ -20,6 +20,10 @@
 			]
 		},
 		{
+			"Name": "NI2SUE5",
+			"Enabled": true
+		},
+		{
 			"Name": "Paper2D",
 			"Enabled": false
 		},

@@ -2,7 +2,7 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"FriendlyName": "Unreal NI2S",
+	"FriendlyName": "NI2S Unreal",
 	"Description": "Plugin for enabling NI2S.",
 	"Category": "Other",
 	"CreatedBy": "ManOguaR",
