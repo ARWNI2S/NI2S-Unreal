@@ -1,8 +1,11 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyrigth (c) 2023 Alternate Reality Worlds. Narrative Interactive Intelligent Simulator for Unreal Engine Plugin.
 
 using System.IO;
 using UnrealBuildTool;
 
+/// <summary>
+/// This is a example imports library module, for testing purposes
+/// </summary>
 public class NI2SImportsLibrary: ModuleRules
 {
 	public NI2SImportsLibrary(ReadOnlyTargetRules Target) : base(Target)

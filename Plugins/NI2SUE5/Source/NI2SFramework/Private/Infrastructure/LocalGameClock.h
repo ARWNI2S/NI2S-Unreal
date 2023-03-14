@@ -1,4 +1,4 @@
-// Copyright (c) 2023 ManOguaR's.
+// Copyrigth (c) 2023 Alternate Reality Worlds. Narrative Interactive Intelligent Simulator for Unreal Engine Plugin.
 
 #pragma once
 
@@ -77,10 +77,10 @@ public:
 
 	FORCEINLINE void UpdateFrame(float DeltaSeconds)
 	{
-		DayTick = UKismetMathLibrary::FMod((DeltaSeconds / TimeUnit) + Clockwork, 24.f, Clockwork);
+		DayTick = UKismetMathLibrary::FMod((DeltaSeconds / TimeUnit) + Clockwork, 24., Clockwork);
 
-		float remS, remM, remH;
-		UKismetMathLibrary::FMod(UKismetMathLibrary::FMod(UKismetMathLibrary::FMod((Clockwork * 3600.f), 60.f, remS), 60.f, remM), 24.f, remH);
+		double remS, remM, remH;
+		UKismetMathLibrary::FMod(UKismetMathLibrary::FMod(UKismetMathLibrary::FMod((Clockwork * 3600.), 60., remS), 60., remM), 24., remH);
 
 		Seconds = FMath::Floor(remS);
 		Minutes = FMath::Floor(remM);
@@ -149,12 +149,12 @@ public:
 	FORCEINLINE float GetClockwork() { return Clockwork; }
 
 private:
-	float TimeUnit = 1.f; // 1.f => 1 second 1 hour, 2.5f => 1 minute 1 day (60/24), 150.f => 1 hour 1 day, 3600.f => realtime.
-	float Clockwork;
+	double TimeUnit = 1.; // 1. => 1 second 1 hour, 2.5 => 1 minute 1 day (60/24), 150. => 1 hour 1 day, 3600. => realtime.
+	double Clockwork;
 	int DayTick;
 
 	void InitClock()
 	{
-		Clockwork = ((float)Hours) + (((float)Minutes) / 60.f) + (((float)Seconds) / 3600.f);
+		Clockwork = ((double)Hours) + (((double)Minutes) / 60.) + (((double)Seconds) / 3600.);
 	}
 };

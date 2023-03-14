@@ -1,4 +1,4 @@
-// Some copyright should be here...
+// Copyrigth (c) 2023 Alternate Reality Worlds. Narrative Interactive Intelligent Simulator for Unreal Engine Plugin.
 
 using UnrealBuildTool;
 
@@ -37,6 +37,7 @@ public class NI2SSubsystem : ModuleRules
 				"CoreUObject",
 				"Engine",
                 "NI2SFramework",
+                "NI2SNetwork",
 				// ... add private dependencies that you statically link with here ...	
 			}
             );

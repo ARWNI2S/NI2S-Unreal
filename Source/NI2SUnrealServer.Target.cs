@@ -13,4 +13,11 @@ public class NI2SUnrealServerTarget : TargetRules
         IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
         ExtraModuleNames.Add("NI2SUnreal");
     }
+
+    //public override void SetupBinaries(TargetInfo Target,
+    //    ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
+    //    ref List<string> OutExtraModuleNames)
+    //{
+    //    OutExtraModuleNames.Add("NI2SUnreal");
+    //}
 }

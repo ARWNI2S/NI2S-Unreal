@@ -1,33 +1,28 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyrigth (c) 2023 Alternate Reality Worlds. Narrative Interactive Intelligent Simulator for Unreal Engine Plugin.
 
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Modules/ModuleManager.h"
+#include "Toolkits/AssetEditorToolkit.h"
+#include "Modules/ModuleInterface.h"
 
-/**
- * This is the module definition for the editor mode. You can implement custom functionality
- * as your plugin module starts up and shuts down. See IModuleInterface for more extensibility options.
- */
-class FNI2SEditorModule : public IModuleInterface
+#define NI2S_EDITOR_MODULE_NAME "NI2SEditor"
+
+//////////////////////////////////////////////////////////////////////////
+// INI2SEditorModule
+
+class INI2SEditorModule : public IModuleInterface
 {
 public:
-
-	/** IModuleInterface implementation */
-	virtual void StartupModule() override;
-	virtual void ShutdownModule() override;
-
 	/** These functions will be bound to Commands. */
-	void TestButtonClicked();
-	void OpenTestWindowClicked();
-	
-private:
+	virtual void TestButtonClicked() { }
+	virtual void OpenTestWindowClicked() { }
 
-	void RegisterMenus();
+	virtual TSharedPtr<class FExtensibilityManager> GetNI2SSceneEditorMenuExtensibilityManager() { return nullptr; }
+	virtual TSharedPtr<class FExtensibilityManager> GetNI2SSceneEditorToolBarExtensibilityManager() { return nullptr; }
 
-	TSharedRef<class SDockTab> OnSpawnTestTab(const class FSpawnTabArgs& SpawnTabArgs);
+	virtual TSharedPtr<class FExtensibilityManager> GetNI2SPlotEditorMenuExtensibilityManager() { return nullptr; }
+	virtual TSharedPtr<class FExtensibilityManager> GetNI2SPlotEditorToolBarExtensibilityManager() { return nullptr; }
 
-private:
-	TSharedPtr<class FUICommandList> TestCommands;
-
+	virtual uint32 GetNI2SAssetCategory() const = 0;
 };

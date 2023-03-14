@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyrigth (c) 2023 Alternate Reality Worlds. Narrative Interactive Intelligent Simulator for Unreal Engine Plugin.
 
 using UnrealBuildTool;
 
@@ -6,58 +6,58 @@ public class NI2SEditor : ModuleRules
 {
 	public NI2SEditor(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		
-		PublicIncludePaths.AddRange(
+        PrivateDependencyModuleNames.AddRange(
 			new string[] {
-				// ... add public include paths required here ...
-			}
-			);
-				
-		
-		PrivateIncludePaths.AddRange(
-			new string[] {
-				// ... add other private include paths required here ...
-			}
-			);
-			
-		
-		PublicDependencyModuleNames.AddRange(
-			new string[]
-			{
-				"Core",
-				// ... add other public dependencies that you statically link with here ...
-			}
-			);
-			
-		
-		PrivateDependencyModuleNames.AddRange(
-			new string[]
-			{
-				"CoreUObject",
-				"Engine",
+                "Core",
+                "CoreUObject",
+                "ApplicationCore",
 				"Slate",
-				"SlateCore",
-				"InputCore",
-				"EditorFramework",
-				"EditorStyle",
-				"UnrealEd",
-				"LevelEditor",
-				"InteractiveToolsFramework",
-				"EditorInteractiveToolsFramework",
-
+                "SlateCore",
+                "Engine",
+                "InputCore",
+                "EditorStyle",
+                "EditorFramework",
+                "UnrealEd", // for AssetEditorSubsystem
+                "KismetWidgets",
+                "Kismet",  // for FWorkflowCentricApplication
+				"PropertyEditor",
+                "RenderCore",
+                "ContentBrowser",
+                "WorkspaceMenuStructure",
+                "MeshPaint",
+                "EditorWidgets",
                 "Projects",
+                "NavigationSystem",
                 "ToolMenus",
-				// ... add private dependencies that you statically link with here ...	
-			}
+				"InteractiveToolsFramework",
+                "EditorInteractiveToolsFramework",
+                "NI2SFramework",
+                "NI2SBPTools",
+                "NI2SNetwork",
+                "NI2SSubsystem",
+            });
+
+        PublicDependencyModuleNames.AddRange(
+            new string[] {
+                "Json",
+            }
+            );		
+
+        PrivateIncludePathModuleNames.AddRange(
+			new string[] {
+                "Settings",
+                "AssetTools",
+                "LevelEditor"
+            }
             );
-		
-		
+
 		DynamicallyLoadedModuleNames.AddRange(
 			new string[]
 			{
-				// ... add any modules that your module loads dynamically here ...
-			}
-			);
-	}
+                "AssetTools"
+            }
+            );
+
+        PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+    }
 }
