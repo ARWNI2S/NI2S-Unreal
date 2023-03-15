@@ -4,13 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "GameFramework/NI2SActorBase.h"
 #include "NI2SActor.generated.h"
 
 /*
-* Abstract AActor class for every narrative-relevant Actor in scene.
+* Blueprintable Actor class for extensible NI2S Actor in blueprints.
 */
-UCLASS(Abstract, NotBlueprintable)
-class NI2SFRAMEWORK_API ANI2SActor : public AActor
+UCLASS(Blueprintable)
+class NI2SFRAMEWORK_API ANI2SActor : public ANI2SActorBase
 {
 	GENERATED_BODY()
 	
