@@ -9,8 +9,8 @@
 /**
  * 
  */
-UCLASS()
-class NI2SFRAMEWORK_API APlayerCharacter : public ANI2S_Character
+UCLASS(Blueprintable)
+class NI2SFRAMEWORK_API APlayerCharacter : public ANI2SCharacter
 {
 	GENERATED_BODY()
 	

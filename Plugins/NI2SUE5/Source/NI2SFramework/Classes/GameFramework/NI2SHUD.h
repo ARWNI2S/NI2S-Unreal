@@ -10,7 +10,7 @@
  * 
  */
 UCLASS(Abstract)
-class NI2SFRAMEWORK_API ANI2S_HUD : public AHUD
+class NI2SFRAMEWORK_API ANI2SHUD : public AHUD
 {
 	GENERATED_BODY()
 	

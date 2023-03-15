@@ -7,13 +7,13 @@
 #include "NI2SCharacter.generated.h"
 
 UCLASS(Abstract)
-class NI2SFRAMEWORK_API ANI2S_Character : public ACharacter
+class NI2SFRAMEWORK_API ANI2SCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	ANI2S_Character();
+	ANI2SCharacter();
 
 protected:
 	// Called when the game starts or when spawned

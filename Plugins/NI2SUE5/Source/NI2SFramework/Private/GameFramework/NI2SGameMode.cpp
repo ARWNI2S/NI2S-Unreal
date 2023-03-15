@@ -8,13 +8,13 @@
 #include "GameFramework/NI2SHUD.h"
 #include "GameFramework/NI2SSpectatorPawn.h"
 
-ANI2S_GameMode::ANI2S_GameMode()
+ANI2SGameMode::ANI2SGameMode()
 {
 	// use our custom PlayerController class
-	PlayerControllerClass = ANI2S_PlayerController::StaticClass();
+	PlayerControllerClass = ANI2SPlayerController::StaticClass();
 
-	//GameStateClass = ANI2S_GameState::StaticClass();
-	PlayerStateClass = ANI2S_PlayerState::StaticClass();
+	//GameStateClass = ANI2SGameState::StaticClass();
+	PlayerStateClass = ANI2SPlayerState::StaticClass();
 
 	// set default pawn class to our Blueprinted character Blueprint'/NI2SUE5/GameFramework/BP_NI2SCharacter.BP_NI2SCharacter'
 	static ConstructorHelpers::FClassFinder<APawn> NI2SPawnBPClass(TEXT("/NI2SUE5/GameFramework/BP_NI2SPawn"));
@@ -23,7 +23,7 @@ ANI2S_GameMode::ANI2S_GameMode()
 		DefaultPawnClass = NI2SPawnBPClass.Class;
 	}
 
-	HUDClass = ANI2S_HUD::StaticClass();
+	HUDClass = ANI2SHUD::StaticClass();
 
-	SpectatorClass = ANI2S_SpectatorPawn::StaticClass();
+	SpectatorClass = ANI2SSpectatorPawn::StaticClass();
 }

@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class NI2SSUBSYSTEM_API ADefaultPlayerController : public ANI2S_PlayerController
+class NI2SSUBSYSTEM_API ADefaultPlayerController : public ANI2SPlayerController
 {
 	GENERATED_BODY()
 	

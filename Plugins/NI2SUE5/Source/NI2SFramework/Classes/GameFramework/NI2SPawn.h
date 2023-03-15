@@ -7,13 +7,13 @@
 #include "NI2SPawn.generated.h"
 
 UCLASS(Abstract)
-class NI2SFRAMEWORK_API ANI2S_Pawn : public APawn
+class NI2SFRAMEWORK_API ANI2SPawn : public APawn
 {
 	GENERATED_BODY()
 
 public:
 	// Establece los valores predeterminados para las propiedades de este pawn
-	ANI2S_Pawn();
+	ANI2SPawn();
 
 protected:
 	// Se llama cuando se inicia el juego o cuando se genera

@@ -10,7 +10,7 @@
  * 
  */
 UCLASS(Abstract)
-class NI2SFRAMEWORK_API ANI2S_PlayerState : public APlayerState
+class NI2SFRAMEWORK_API ANI2SPlayerState : public APlayerState
 {
 	GENERATED_BODY()
 	

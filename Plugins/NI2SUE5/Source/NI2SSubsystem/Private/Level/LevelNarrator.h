@@ -10,7 +10,7 @@
  * 
  */
 UCLASS(notplaceable)
-class NI2SSUBSYSTEM_API ALevelNarrator : public ANI2S_Actor
+class NI2SSUBSYSTEM_API ALevelNarrator : public ANI2SActor
 {
 	GENERATED_BODY()
 	

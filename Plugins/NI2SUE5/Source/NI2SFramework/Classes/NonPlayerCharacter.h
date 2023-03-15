@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class NI2SFRAMEWORK_API ANonPlayerCharacter : public ANI2S_Character
+class NI2SFRAMEWORK_API ANonPlayerCharacter : public ANI2SCharacter
 {
 	GENERATED_BODY()
 	

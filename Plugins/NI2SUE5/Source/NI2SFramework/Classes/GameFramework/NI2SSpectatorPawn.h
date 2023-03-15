@@ -10,7 +10,7 @@
  * 
  */
 UCLASS(Abstract)
-class NI2SFRAMEWORK_API ANI2S_SpectatorPawn : public ASpectatorPawn
+class NI2SFRAMEWORK_API ANI2SSpectatorPawn : public ASpectatorPawn
 {
 	GENERATED_BODY()
 	

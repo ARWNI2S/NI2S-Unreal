@@ -10,7 +10,7 @@
  * 
  */
 UCLASS(Abstract)
-class NI2SFRAMEWORK_API ANI2S_AIController : public AAIController
+class NI2SFRAMEWORK_API ANI2SAIController : public AAIController
 {
 	GENERATED_BODY()
 	

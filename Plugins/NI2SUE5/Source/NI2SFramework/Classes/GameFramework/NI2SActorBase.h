@@ -4,19 +4,21 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "NI2SActor.generated.h"
+#include "NI2SActorBase.generated.h"
 
 /*
-* Abstract AActor class for every narrative-relevant Actor in scene.
+* Abstract AActor class for every narrative-relevant Actor in game,
+* encapsulates all NI2SActor automations and is not inheritable by blueprints.
+* TODO: Cast Issue
 */
 UCLASS(Abstract, NotBlueprintable)
-class NI2SFRAMEWORK_API ANI2SActor : public AActor
+class NI2SFRAMEWORK_API ANI2SActorBase : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ANI2SActor();
+	ANI2SActorBase();
 
 protected:
 	// Called when the game starts or when spawned
@@ -27,4 +29,3 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 };
-

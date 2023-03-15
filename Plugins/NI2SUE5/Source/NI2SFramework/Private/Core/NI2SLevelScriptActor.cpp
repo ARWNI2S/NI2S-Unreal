@@ -3,7 +3,7 @@
 
 #include "Core/NI2SLevelScriptActor.h"
 
-ANI2S_LevelScriptActor::ANI2S_LevelScriptActor(const FObjectInitializer& ObjectInitializer)
+ANI2SLevelScriptActor::ANI2SLevelScriptActor(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
 }

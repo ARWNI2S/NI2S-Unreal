@@ -10,11 +10,11 @@
  * 
  */
 UCLASS(Abstract)
-class NI2SFRAMEWORK_API ANI2S_LevelScriptActor : public ALevelScriptActor
+class NI2SFRAMEWORK_API ANI2SLevelScriptActor : public ALevelScriptActor
 {
 	GENERATED_BODY()
 	
 protected:
-	ANI2S_LevelScriptActor(const FObjectInitializer& ObjectInitializer);
+	ANI2SLevelScriptActor(const FObjectInitializer& ObjectInitializer);
 
 };

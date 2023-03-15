@@ -12,7 +12,7 @@ class ALevelNarrator;
  * 
  */
 UCLASS()
-class NI2SSUBSYSTEM_API ANarrativeLevelScript : public ANI2S_LevelScriptActor
+class NI2SSUBSYSTEM_API ANarrativeLevelScript : public ANI2SLevelScriptActor
 {
 	GENERATED_BODY()
 	
