@@ -10,7 +10,7 @@
 /**
  * Implements the network settings for the NI2S plugin.
  */
-UCLASS(config = Engine, defaultconfig)
+UCLASS(config = NI2SUE5, defaultconfig)
 class NI2SNETWORK_API UNI2SNetworkSettings : public UObject
 {
 	GENERATED_UCLASS_BODY()

@@ -28,7 +28,7 @@ class NI2SEDITOR_API UNI2SEditorSettings : public UObject
 /**
  * Implements global development settings for the NI2S plugin.
  */
-UCLASS(config = Engine)
+UCLASS(config = NI2SEditor)
 class NI2SEDITOR_API UNI2SPluginSettings : public UObject
 {
 	GENERATED_UCLASS_BODY()

@@ -10,7 +10,7 @@
 /**
  * Implements the settings for the Paper2D plugin.
  */
-UCLASS(config = Engine, defaultconfig)
+UCLASS(config = NI2SUE5, defaultconfig)
 class NI2SFRAMEWORK_API UNI2SRuntimeSettings : public UObject
 {
 	GENERATED_UCLASS_BODY()

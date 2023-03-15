@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/NI2SActor.h"
-#include "LevelNarrator.generated.h"
+#include "Components/NI2SActorComponentBase.h"
+#include "NI2SPropertiesComponent.generated.h"
 
 /**
  * 
  */
-UCLASS(notplaceable)
-class NI2SSUBSYSTEM_API ALevelNarrator : public ANI2SActorBase
+UCLASS()
+class NI2SFRAMEWORK_API UNI2SPropertiesComponent : public UNI2SActorComponentBase
 {
 	GENERATED_BODY()
 	

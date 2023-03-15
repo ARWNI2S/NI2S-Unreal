@@ -357,7 +357,7 @@ private:
 
 			// Editor Plugin Settings
 			SettingsModule->RegisterSettings("Editor", "Plugins", "NI2S",
-				LOCTEXT("NI2SEditorSettingsName", "Editor Settings"),
+				LOCTEXT("NI2SEditorSettingsName", "NI2S Editor Settings"),
 				LOCTEXT("NI2SEditorSettingsDescription", "Configure Unreal Editor for NI2S plugin."),
 				GetMutableDefault<UNI2SEditorSettings>());
 
