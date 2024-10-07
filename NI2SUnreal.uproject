@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.1",
+	"EngineAssociation": "{7BAC5896-4A7F-32A0-A7FB-DD884D51ED4C}",
 	"Category": "Development",
 	"Description": "Development project for NI2S Unreal plugin.",
 	"Modules": [
