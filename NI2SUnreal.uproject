@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{7BAC5896-4A7F-32A0-A7FB-DD884D51ED4C}",
+	"EngineAssociation": "5.5",
 	"Category": "Development",
 	"Description": "Development project for NI2S Unreal plugin.",
 	"Modules": [
@@ -8,17 +8,25 @@
 			"Name": "NI2SUnreal",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "NI2SClient",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		},
+		{
+			"Name": "NI2SServer",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
-		{
-			"Name": "VisualStudioTools",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/362651520df94e4fa65492dbcba44ae2",
-			"SupportedTargetPlatforms": [
-				"Win64"
-			]
-		},
 		{
 			"Name": "NI2SUE5",
 			"Enabled": true

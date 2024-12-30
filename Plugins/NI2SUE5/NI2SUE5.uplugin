@@ -2,17 +2,17 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"FriendlyName": "NI2S Unreal",
-	"Description": "Plugin for enabling NI2S.",
+	"FriendlyName": "NI2SUE5",
+	"Description": "NI2S Unreal Engine core plugin",
 	"Category": "NI2S",
 	"CreatedBy": "ManOguaR",
-	"CreatedByURL": "http://github.com/ARWNI2S",
-	"DocsURL": "http://github.com/ARWNI2S",
+	"CreatedByURL": "http://www.dragoncorp.org",
+	"DocsURL": "",
 	"MarketplaceURL": "",
-	"SupportURL": "http://github.com/ARWNI2S",
+	"SupportURL": "",
 	"CanContainContent": true,
 	"IsBetaVersion": true,
-	"IsExperimentalVersion": true,
+	"IsExperimentalVersion": false,
 	"Installed": false,
 	"Modules": [
 		{
@@ -21,19 +21,19 @@
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "NI2SBPTools",
-			"Type": "Runtime",
-			"LoadingPhase": "PreLoadingScreen"
-		},
-		{
-			"Name": "NI2SNetwork",
+			"Name": "SceneCore",
 			"Type": "Runtime",
 			"LoadingPhase": "PreDefault"
 		},
 		{
-			"Name": "NI2SSubsystem",
+			"Name": "NarrativeCore",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "PreDefault"
+		},
+		{
+			"Name": "NI2SEditCore",
+			"Type": "Editor",
+			"LoadingPhase": "PreDefault"
 		}
 	]
 }

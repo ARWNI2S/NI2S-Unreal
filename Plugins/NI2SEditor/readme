@@ -1,5 +1,0 @@
-To get NI2SImport test module working add this to "Modules" section in NI2SEditor.uplugin file
-		{
-			"Name": "NI2SImports",
-			"Type": "Runtime"
-		},

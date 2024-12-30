@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class NI2SFramework : ModuleRules
+public class SceneCore : ModuleRules
 {
-	public NI2SFramework(ReadOnlyTargetRules Target) : base(Target)
+	public SceneCore(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		

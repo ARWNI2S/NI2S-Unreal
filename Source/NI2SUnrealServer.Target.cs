@@ -8,16 +8,8 @@ public class NI2SUnrealServerTarget : TargetRules
     public NI2SUnrealServerTarget(TargetInfo Target) : base(Target)
     {
         Type = TargetType.Server;
-        DefaultBuildSettings = BuildSettingsVersion.V2;
-        //IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-        IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
-        ExtraModuleNames.Add("NI2SUnreal");
+        DefaultBuildSettings = BuildSettingsVersion.Latest;
+        IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+        ExtraModuleNames.AddRange(new string[] { "NI2SUnreal", "NI2SServer" });
     }
-
-    //public override void SetupBinaries(TargetInfo Target,
-    //    ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
-    //    ref List<string> OutExtraModuleNames)
-    //{
-    //    OutExtraModuleNames.Add("NI2SUnreal");
-    //}
 }

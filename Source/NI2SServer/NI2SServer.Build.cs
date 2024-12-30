@@ -1,10 +1,10 @@
-// Copyright Dragon Corp. Games, S.L. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 
-public class NI2SUnreal : ModuleRules
+public class NI2SServer : ModuleRules
 {
-	public NI2SUnreal(ReadOnlyTargetRules Target) : base(Target)
+	public NI2SServer(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	

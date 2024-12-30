@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright Dragon Corp. Games, S.L. All Rights Reserved.
 
 #include "NI2SUnreal.h"
 #include "Modules/ModuleManager.h"
